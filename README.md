@@ -37,7 +37,8 @@ for each wear category.</p>
 8. Visulaize the sequence patterns using matplotlib.
 </p>
 ### Program:
-```
+
+```python
 from collections import defaultdict
 from itertools import combinations
 # Function to generate candidate k-item sequences
@@ -120,14 +121,12 @@ if party_wear_result:
         print(f"Pattern: {pattern}, Support: {support}")
 else:
     print("No frequent sequential patterns found in Party Wear.")
-
-
 ```
 ### Output:
 
+![image](https://github.com/user-attachments/assets/030d7b06-5d42-468b-b2dc-8723716bd99e)
 
 ### Visualization:
-
 ```python
 import matplotlib.pyplot as plt
 
@@ -154,41 +153,12 @@ visualize_patterns_line(bottom_wear_result, 'Bottom Wear')
 visualize_patterns_line(party_wear_result, 'Party Wear')
 ```
 ### Output:
-![image](https://github.com/user-attachments/assets/7983567c-a9c2-45f1-b5fd-401f031e5e12)
-## Visualization:
-```
-import matplotlib.pyplot as plt
 
-# Function to visualize frequent sequential patterns with a line plot
-def visualize_patterns_line(result, category):
-    if result:
-        patterns = list(result.keys())
-        support = list(result.values())
+![image](https://github.com/user-attachments/assets/0ae90be8-48d7-4141-ba1d-d5904a7771e2)
 
-        plt.figure(figsize=(10, 6))
-        plt.plot([str(pattern) for pattern in patterns], support, marker='o', linestyle='-', color='blue')
-        plt.xlabel('Patterns')
-        plt.ylabel('Support Count')
-        plt.title(f'Frequent Sequential Patterns - {category}')
-        plt.xticks(rotation=90)
-        plt.tight_layout()
-        plt.show()
-    else:
-        print(f"No frequent sequential patterns found in {category}.")
-
-# Visualize frequent sequential patterns for each category using a line plot
-visualize_patterns_line(top_wear_result, 'Top Wear')
-visualize_patterns_line(bottom_wear_result, 'Bottom Wear')
-visualize_patterns_line(party_wear_result, 'Party Wear')
-
-```
-### Output:
-![image](https://github.com/user-attachments/assets/b7a754c4-04c8-4c40-a27c-a10f6ad1cb98)
-![image](https://github.com/user-attachments/assets/256c1010-2992-43d2-85d9-185c4a5c4e68)
-
-
+![image](https://github.com/user-attachments/assets/3e9f5144-f31b-4c3c-a6a0-3507e0ac3c9a)
 
 ### Result:
-Thus, the implementation of the GSP algorithm in Python has been successfully executed.
 
+Thus, the implementation of the GSP algorithm in Python has been successfully executed.
 
