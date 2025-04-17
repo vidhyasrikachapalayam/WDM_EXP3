@@ -127,7 +127,7 @@ else:
 
 
 ### Visualization:
-```
+
 ```python
 import matplotlib.pyplot as plt
 
@@ -156,6 +156,7 @@ visualize_patterns_line(party_wear_result, 'Party Wear')
 ### Output:
 ![image](https://github.com/user-attachments/assets/7983567c-a9c2-45f1-b5fd-401f031e5e12)
 ## Visualization:
+```
 import matplotlib.pyplot as plt
 
 # Function to visualize frequent sequential patterns with a line plot
@@ -182,6 +183,10 @@ visualize_patterns_line(party_wear_result, 'Party Wear')
 
 ```
 ### Output:
+![image](https://github.com/user-attachments/assets/b7a754c4-04c8-4c40-a27c-a10f6ad1cb98)
+![image](https://github.com/user-attachments/assets/256c1010-2992-43d2-85d9-185c4a5c4e68)
+
+
 
 ### Result:
 Thus, the implementation of the GSP algorithm in Python has been successfully executed.
